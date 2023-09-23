@@ -10,4 +10,11 @@ while True:
     else:
         break
 print(numbers)
-print(hello)
+n = len(numbers) / 2
+ans = 0
+
+if n % 2 == 0:
+    ans = (numbers[n] + numbers[n - 1]) / 2
+
+if n % 2 == 1:
+    ans = numbers[n]
