@@ -10,11 +10,16 @@ while True:
     else:
         break
 print(numbers)
-n = len(numbers) / 2
+
+numbers.sort()
+
+n = len(numbers)
 ans = 0
 
 if n % 2 == 0:
-    ans = (numbers[n] + numbers[n - 1]) / 2
+    n = int(n / 2)
+    ans = (numbers[n] + numbers[n + 1]) / 2
 
 if n % 2 == 1:
+    n = int(n / 2)
     ans = numbers[n]
