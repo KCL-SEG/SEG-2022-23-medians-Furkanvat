@@ -23,3 +23,4 @@ if n % 2 == 0:
 if n % 2 == 1:
     n = int(n / 2)
     ans = numbers[n]
+print(ans)
