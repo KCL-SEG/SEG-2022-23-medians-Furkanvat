@@ -14,13 +14,15 @@ print(numbers)
 numbers.sort()
 
 n = len(numbers)
+half = int(n / 2)
 ans = 0
 
+
 if n % 2 == 0:
-    n = int(n / 2)
-    ans = (numbers[n] + numbers[n + 1]) / 2
+    ans = (numbers[half] + numbers[half - 1]) / 2
 
 if n % 2 == 1:
-    n = int(n / 2)
-    ans = numbers[n]
+    ans = numbers[half]
+
+
 print(ans)
