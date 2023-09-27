@@ -17,6 +17,7 @@ n = len(numbers)
 half = int(n / 2)
 ans = 0
 
+print("isma")
 
 if n % 2 == 0:
     ans = (numbers[half] + numbers[half - 1]) / 2
